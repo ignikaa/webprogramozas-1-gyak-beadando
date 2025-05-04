@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapcsolat - FilmDB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../styles/main.css" rel="stylesheet">
+    <script src="contact.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">FilmDB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Főoldal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="movies.html">Filmek</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reviews.html">Értékelések</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">Hírek</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Rólunk</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Kapcsolat</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1>Kapcsolat</h1>
+        
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <form class="contact-form">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Név</label>
+                        <input type="text" class="form-control" id="name" required minlength="10">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Telefonszám</label>
+                        <input type="tel" class="form-control" id="phone" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Tárgy</label>
+                        <input type="text" class="form-control" id="subject" required minlength="10">
+                    </div>
+                    <div class="mb-3">
+                        <label for="contact-preference" class="form-label">Kapcsolatfelvétel módja</label>
+                        <select class="form-control" id="contact-preference" required>
+                            <option value="">Válasszon...</option>
+                            <option value="email">Email</option>
+                            <option value="phone">Telefon</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Üzenet</label>
+                        <textarea class="form-control" id="message" rows="5" required minlength="10"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Küldés</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/600x400" alt="Contact" class="img-fluid mb-4">
+                <h3>Elérhetőségeink</h3>
+                <p>Email: test@test.hu</p>
+                <p>Telefon: +36 1 234 5678</p>
+                <p>Cím: 1234 Budapest, test utca 5.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>FilmDB</h5>
+                    <p>A legjobb filmadatbázis magyarországon</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Gyors linkek</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="news.html" class="text-light">Legújabb filmek</a></li>
+                        <li><a href="reviews.html" class="text-light">Top filmek</a></li>
+                        <li><a href="contact.html" class="text-light">Vegye fel velünk a kapcsolatot</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Kapcsolat</h5>
+                    <p>Email: test@test.hu<br>Tel: +36 1 234 5678</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

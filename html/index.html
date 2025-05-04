@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Adatbázis - Főoldal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">FilmDB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Főoldal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="movies.html">Filmek</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reviews.html">Értékelések</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">Hírek</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Rólunk</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Kapcsolat</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1>Üdvözöljük a Film Adatbázisban!</h1>
+        
+        <div class="featured-movies mb-5">
+            <h2>Kiemelt filmek</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/300x450" alt="Film 1" class="img-fluid movie-poster">
+                    <h3>Inception</h3>
+                    <p>Egy lenyűgöző sci-fi thriller, amely az álmok világában játszódik. Dom Cobb különleges képességét használva információkat lop az emberek elméjéből álmuk során.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/300x450" alt="Film 2" class="img-fluid movie-poster">
+                    <h3>The Godfather</h3>
+                    <p>A maffia klasszikus története, amely bemutatja a Corleone család felemelkedését. Ez a film meghatározta a gengszterfilmek műfaját.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/300x450" alt="Film 3" class="img-fluid movie-poster">
+                    <h3>Pulp Fiction</h3>
+                    <p>Tarantino kultikus alkotása, amely több, egymással összefonódó történetet mesél el Los Angeles alvilágából.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="latest-reviews mb-5">
+            <h2>Legfrissebb értékelések</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h4>Dűne (2021)</h4>
+                            <div class="text-warning mb-2">★★★★★</div>
+                            <p>"Lenyűgöző vizuális élmény, amely hűen adaptálja a könyvet."</p>
+                            <small class="text-muted">- Tesz Elek, 2023.11.15</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h4>Oppenheimer (2023)</h4>
+                            <div class="text-warning mb-2">★★★★☆</div>
+                            <p>"Mesterien megrendezett történelmi dráma."</p>
+                            <small class="text-muted">- User Not Found, 2023.11.14</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="news-section mb-5">
+            <h2>Filmhírek</h2>
+            <div class="row">
+                <div class="col-lg-4 mb-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Filmes hírek">
+                        <div class="card-body">
+                            <h5>Új Marvel film készül</h5>
+                            <p>A következő Marvel produkció előkészületei már javában zajlanak...</p>
+                            <a href="news.html" class="btn btn-primary">Tovább</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Oscar díj">
+                        <div class="card-body">
+                            <h5>Oscar 2026 jelöltek</h5>
+                            <p>Már megvannak a következő évi Oscar-díj várományosai...</p>
+                            <a href="news.html" class="btn btn-primary">Tovább</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Filmfesztivál">
+                        <div class="card-body">
+                            <h5>Magyar Filmhét</h5>
+                            <p>Kezdetét vette az idei Magyar Filmhét...</p>
+                            <a href="news.html" class="btn btn-primary">Tovább</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="top-rated mb-5">
+            <h2>Legjobban értékelt filmek</h2>
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/200x300" class="card-img-top" alt="Film">
+                        <div class="card-body">
+                            <h5>A remény rabjai</h5>
+                            <div class="text-warning">★★★★★</div>
+                            <p class="mb-0">9.8/10</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/200x300" class="card-img-top" alt="Film">
+                        <div class="card-body">
+                            <h5>Forrest Gump</h5>
+                            <div class="text-warning">★★★★★</div>
+                            <p class="mb-0">9.6/10</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/200x300" class="card-img-top" alt="Film">
+                        <div class="card-body">
+                            <h5>Matrix</h5>
+                            <div class="text-warning">★★★★★</div>
+                            <p class="mb-0">9.5/10</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/200x300" class="card-img-top" alt="Film">
+                        <div class="card-body">
+                            <h5>Eredet</h5>
+                            <div class="text-warning">★★★★★</div>
+                            <p class="mb-0">9.4/10</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>FilmDB</h5>
+                    <p>A legjobb filmadatbázis magyarországon</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Gyors linkek</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="news.html" class="text-light">Legújabb filmek</a></li>
+                        <li><a href="reviews.html" class="text-light">Top filmek</a></li>
+                        <li><a href="contact.html" class="text-light">Vegye fel velünk a kapcsolatot</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Kapcsolat</h5>
+                    <p>Email: test@test.hu<br>Tel: +36 1 234 5678</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
